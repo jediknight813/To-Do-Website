@@ -78,15 +78,15 @@
     color: rgb(0, 0, 0);
     background-color: Transparent;
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 10%;
     text-align: left;
 }
 
 
 .Action_buttons:hover {
-    background-color: rgb(48, 150, 233);
-    font-size: 32px;
+    background-color: rgb(101, 179, 243);
+    font-size: 26px;
     width: 185px;
     height: 55px;
 }

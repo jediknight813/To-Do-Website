@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="Images/icon.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="Javascript.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>opus</title>
@@ -18,24 +19,29 @@
         <div id="sidebaractions" class="sidebar_text"> 
             <div> Action </div>
 
-            <button class="Action_buttons">➕ New Task </button>
-            <button class="Action_buttons">💼 New Project </button>
+            <button onclick="project_page(this.innerHTML)" class="Action_buttons">➕ New Task </button>
+            <button onclick="project_page(this.innerHTML)" class="Action_buttons">💼 New Project </button>
 
         </div>
         
 
         <div id="sidebarprojects" class="sidebar_text"> 
             Projects
-            <button class="Action_buttons">📝 camping trip </button>
-            <button class="Action_buttons">📝 school </button>
+            <button onclick="project_page(this.innerHTML)" class="Action_buttons">📝 camping trip </button>
+            <button onclick="project_page(this.innerHTML)" class="Action_buttons">📝 school </button>
         </div>
 
         <div id="sidebarcalendar" class="sidebar_text"> 
             Calendar
-            <button class="Action_buttons">⏰ Today </button>
-            <button class="Action_buttons">📆 Week </button>
-            <button class="Action_buttons">📅 Month </button>
+            <button onclick="project_page(this.innerHTML)" class="Action_buttons">⏰ Today </button>
+            <button onclick="project_page(this.innerHTML)" class="Action_buttons">📆 Week </button>
+            <button onclick="project_page(this.innerHTML)" class="Action_buttons">📅 Month </button>
         </div>
+
+
+        <!--
+
+            <button id="create_new_task" class="task_box"> ➕ new task  </button>   
 
         <div id="sidebarcalendar" class="sidebar_text"> 
             Miscellaneous
@@ -44,9 +50,24 @@
             <button class="Action_buttons">👓 Finished projects </button>
             <button class="Action_buttons">❓ About</button>
         </div>
-
+        -->
 
     </div>
+
+
+    <div id="screen" class="screen">
+
+        <div id="page_title" class="new_task_text"> ⏰ Today </div>
+
+        <input id="task" class="task_input_box" type="text">
+        <input id="date" class="task_input_buttons" type="date">
+        <button onclick="add_task()" class="task_input_buttons">Add</button>
+        <button class="task_input_buttons">Cancel</button>
+        
+
+    </div>
+
+
 
 <!--
     <div class="footer">

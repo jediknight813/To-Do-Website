@@ -76,7 +76,6 @@
     background-color: Transparent;
     font-family: sans-serif;
     font-size: 21px;
-    border-radius: 10%;
     text-align: left;
 }
 
@@ -85,5 +84,71 @@
     background-color: rgb(101, 179, 243);
     font-size: 22px;
     width: 258px;
-    height: 55px;
+}
+
+
+
+.screen {
+    z-index: -1;
+    position: absolute;
+    top: 150px;
+    left: 27%;
+    margin: auto;
+    width: 60%;
+    height: 80%;
+}
+
+
+.new_task_text {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    text-align: left;
+}
+
+.task_box {
+    top: 150px;
+    margin: auto;
+    width: 100%;
+    height: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.task_box:hover {
+    background-color: rgb(212, 211, 211);
+}
+
+.task_input_box {
+    background-color: rgb(241, 240, 240);
+    width: 55%;
+    height: 5%;
+}
+
+.task_input_buttons {
+    height: 5%;
+    width: 14.6%;
+    text-align: center;
+}
+
+.task_input_buttons:hover {
+    background-color: rgb(216, 213, 213);
+}
+
+.task_background {
+    background-color: rgb(243, 243, 243);
+    top: 150px;
+    margin: auto;
+    width: 100%;
+    height: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.finished_button {
+    left: 100%;
+    height: 35px;
+    width: 100px;
+    background-color: rgb(209, 205, 205);
 }

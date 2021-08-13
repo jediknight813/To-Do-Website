@@ -191,6 +191,7 @@ function add_task() {
     div.appendChild(date_box)
     document.getElementById("screen_space").appendChild(div)
     reset_input_for_new_task()
+    save_data()
 
 }
 
@@ -330,6 +331,7 @@ function isThisWeek (date) {
     div.appendChild(add_project_button)
     div.appendChild(remove_project_button)
     document.getElementById("sidebarprojects").appendChild(div)
+    save_data()
 
 }
 
@@ -357,6 +359,7 @@ function populate_projects(data) {
 
 
     add_project_to_sidebar(x)
+    save_data()
    
 }
 
@@ -380,4 +383,15 @@ function add_project_to_sidebar(Project_title) {
 
     document.getElementById("sidebarprojects").appendChild(div);
 
+    save_data()
+}
+
+
+function save_data() {
+    localStorage.setItem("data", events)
+}
+
+function load_data() {
+    //events.push(localStorage.getItem("data"))
+    //console.log(localStorage.getItem("data"))
 }

@@ -58,6 +58,16 @@
 }
 
 
+.sidebar_text_new_project {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+
+}
+
 .sidebar_text {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(0, 0, 0);
@@ -168,16 +178,60 @@
     left: 3%;
 }
 
+
+.task_text_completed {
+    text-decoration: line-through;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    z-index: 5;
+    position: absolute;
+    top: 19.2%;
+    left: 3%;
+
+}
+
 .checkbox {
     height: 20px;
     width: 20px;
-    border-radius: 20%;
+    border-radius: 70%;
 }
 
 .date_box {
     font-size: 20px;
     position: absolute;
-    left: 85%;
+    left: 80%;
     height: 30px;
     top: 19.2%;
+}
+
+.project_area {
+    position: relative;
+    grid-template: repeat(1, 1fr) / repeat(4, 1fr);
+    top: 12px;
+    margin: auto;
+    width: 90%;
+    height: 2%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.textbox {
+    height: 30px;
+    width: 200px;
+}
+
+.project_button {
+    height: 40px;
+    width: 90px;
+    background-color: rgb(101, 179, 243);
+    font-size: 20px;
+    left: -30%;
+}
+
+
+.project_button:hover {
+    width: 45;
+    height: 95;
+    font-size: 25;
 }

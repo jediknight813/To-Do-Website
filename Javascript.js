@@ -1,9 +1,6 @@
 
 
-const events = [{project: "⏰ Today ", date: "2021-09-01", task: "sad"},
-{project: "⏰ Today ", date: "2021-08-12", task: "dsa"},
-{project: "📆 Week ", date: "2021-08-14", task: "dasd"},
-{project: "📆 Week ", date: "2021-08-13", task: "awdsa"}];
+var events 
 
 
 function project_page(project_name) {
@@ -388,10 +385,11 @@ function add_project_to_sidebar(Project_title) {
 
 
 function save_data() {
-    localStorage.setItem("data", events)
+    localStorage.setItem('key', JSON.stringify(events));
 }
 
 function load_data() {
-    //events.push(localStorage.getItem("data"))
-    //console.log(localStorage.getItem("data"))
+    localStorage.clear('key')
+    var data = JSON.parse(localStorage.getItem('key'));
+    events = data
 }

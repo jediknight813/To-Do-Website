@@ -389,7 +389,6 @@ function save_data() {
 }
 
 function load_data() {
-    localStorage.clear('key')
     var data = JSON.parse(localStorage.getItem('key'));
     events = data
 }

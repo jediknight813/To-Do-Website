@@ -1,4 +1,4 @@
-A to-do website for the oden project.
+A to-do website for the odin project.
 
 a link to the website: https://jediknight813.github.io/To-Do-Website/
 
